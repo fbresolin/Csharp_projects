@@ -8,13 +8,15 @@ namespace ObjectExample
 {
     internal class Book
     {
-        public string title;
         public string author;
-        public string pages;
+        public string title;
+        public int pages;
 
-        public Book(string name)
+        public Book(string aAuthor, string aTitle, int aPages)
         {
-            Console.WriteLine(name);
+            author = aAuthor;
+            title = aTitle;
+            pages = aPages;
         }
     }
 }
